@@ -1,0 +1,31 @@
+﻿{
+  "CompresssionType": "None",
+  "Sample": null,
+  "EventHubProperties": null,
+  "BlobStorageProperties": {
+    "Container": "infosysindiamaharashtrapune",
+    "DateFormat": "yyyy/MM/dd",
+    "PathPattern": "",
+    "SourcePartitionCount": 1,
+    "StorageAccounts": [
+      {
+        "AccountKey": null,
+        "AccountName": "areaoccupancystorage"
+      }
+    ],
+    "TimeFormat": "HH"
+  },
+  "IoTHubProperties": null,
+  "BlobReferenceProperties": null,
+  "DataSourceCredentialDomain": "a06203bd-f8a4-44a5-89d0-76ff08ec323e.StreamAnalyticsCredential",
+  "Name": "AreaOccupancyStreamMock",
+  "Type": "Data Stream",
+  "DataSourceType": "Blob Storage",
+  "Serialization": {
+    "Encoding": "UTF8",
+    "Type": "Json",
+    "FieldDelimiter": null,
+    "Format": null
+  },
+  "ScriptType": "Input"
+}

@@ -1,0 +1,25 @@
+﻿{
+  "EventHubProperties": null,
+  "BlobStorageProperties": null,
+  "SQLDatabaseProperties": null,
+  "TableStorageProperties": null,
+  "ServiceBusQueueProperties": null,
+  "ServiceBusTopicProperties": null,
+  "DocumentDbProperties": null,
+  "PowellBIProperties": {
+    "RefreshToken": null,
+    "TokenUserPrincipalName": null,
+    "TokenUserDisplayName": null,
+    "Dataset": "AreaOccupancyAnalyzedStreamFromMock",
+    "Table": "AreaOccupancyAnalyzedStreamMock",
+    "GroupId": "d9e65ea5-e7d9-45bb-9751-34f0489cafc7",
+    "GroupName": "SocialDistancing"
+  },
+  "AzureDataLakeStoreProperties": null,
+  "AzureFunctionProperties": null,
+  "DataSourceCredentialDomain": null,
+  "Name": "AreaOccupancyAnalyzedStreamMock",
+  "DataSourceType": "Power BI",
+  "Serialization": null,
+  "ScriptType": "Output"
+}

@@ -1,0 +1,27 @@
+﻿/*StorageAccount:areaoccupancystorage,Container: infosysindiamaharashtrapune*/
+SELECT
+    *
+INTO
+    [AreaOccupancyAnalyzedStreamMock]
+FROM
+    [AreaOccupancyStreamMock]
+
+SELECT
+    *
+INTO
+    [InfosysAreaOccupancyAnalyzedStreamIoTHub]
+FROM
+    [InfosysAreaOccupancyStreamIoTHub]
+/*
+SELECT
+    System.Timestamp AS WindowEnd,
+    SUM([Employee Count]) AS [Total Employee Count],
+    [Region],
+    [Sub Region 1],
+    [Sub Region 2]
+INTO
+    [powerbisda1]
+FROM
+    [abc]
+GROUP BY TumblingWindow(Duration(second, 1)), [Region], [Sub Region 1], [Sub Region 2]
+*/
