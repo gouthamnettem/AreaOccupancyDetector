@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.1145
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{E6C563F2-BDC2-4A24-ACBF-01715157DCBB}") = "AreaOccupancyAnalyzer", "AreaOccupancyAnalyzer\AreaOccupancyAnalyzer.asaproj", "{5C9075DF-2F19-4EFB-A352-BF20E9E5A8C2}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MockDataGenerator", "..\..\Users\v-disabh\source\repos\MockDataGenerator\MockDataGenerator\MockDataGenerator.csproj", "{F277A1A9-C832-4F78-A0D9-B25F75D9751C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{5C9075DF-2F19-4EFB-A352-BF20E9E5A8C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C9075DF-2F19-4EFB-A352-BF20E9E5A8C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C9075DF-2F19-4EFB-A352-BF20E9E5A8C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F277A1A9-C832-4F78-A0D9-B25F75D9751C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F277A1A9-C832-4F78-A0D9-B25F75D9751C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F277A1A9-C832-4F78-A0D9-B25F75D9751C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F277A1A9-C832-4F78-A0D9-B25F75D9751C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
