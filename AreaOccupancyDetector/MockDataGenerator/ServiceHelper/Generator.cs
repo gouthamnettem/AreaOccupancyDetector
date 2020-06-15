@@ -1,7 +1,6 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.WindowsAzure.Storage;
 using Microsoft.WindowsAzure.Storage.Blob;
-using MockDataGenerator.Entity;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;

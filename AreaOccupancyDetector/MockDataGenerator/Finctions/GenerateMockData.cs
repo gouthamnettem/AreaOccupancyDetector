@@ -5,7 +5,6 @@ using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Host;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
-using MockDataGenerator.Entity;
 using System.Text;
 using Newtonsoft.Json.Linq;
 using System.Threading.Tasks;
