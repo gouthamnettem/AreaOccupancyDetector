@@ -1,0 +1,27 @@
+Step 1: Create an IoT hub [example: InfosysAreaOccupancyIoTHub] with 13 devices:
+	PuneP2FC1L0Dominos
+	PuneP2FC1L0KFC
+	PuneP2FC1L1ChennaiExpress:
+	PuneP2FC1L1ChaiPoint
+	PuneP2FC1L0DelhiSwad
+	PuneP2FC1L0CommonAreaInFrontOfDominos
+	PuneP2FC1L0CommonAreaInFrontOfKFC
+	PuneP2FC1L1CommonAreaInFrontOfChennaiExpress
+	PuneP2FC1L1CommonAreaInFrontOfChaiPoint
+	PuneP2FC1L0CommonAreaInFrontOfDelhiSwad
+	PuneP2FC1L1CommonAreaRightWing
+	PuneP2FC1L1CommonAreaLeftWing
+	PuneP2FC1L1CommonAreaCenterWing
+Step 2: Create a storage account [example: areaoccupancystorage]
+Step 3: Create following containers in the above storage account
+	mockdata: raw data from external source [turnstile data, app data or existing sensor data]
+	sensorconfiguration: reference or domain data for external source [example: sensorconfiguration.json]
+	infosysindiamaharashtrapune: processed data from external source
+	infosysindiamaharashtrapuneextsourcehistory: historical data from external source for future use (build api's, trends etc)
+	infosysindiamaharashtrapunelookup: reference or domain data for iot devices [example: devices.json]
+	infosysindiamaharashtrapuneiothistory: historical data from IoT devices for future use (build api's, trends etc)
+Step 4: Create Application Insight resource
+Step 5: Need a Power BI Account
+Step 6: Use Online Raspberry-Pi Web Simulator to invoke IoT devices [https://azure-samples.github.io/raspberry-pi-web-simulator/]
+	
+	

@@ -1,0 +1,132 @@
+[
+  {
+    "Country": "India",
+    "State": "Maharashtra",
+    "City": "Pune",
+    "DC": "SEZ",
+    "Region": "Cafeteria 1",
+    "Sub Region 1": "Floor 0",
+    "Sub Region 2": "Dominos",
+    "Capacity": "35"
+  },
+  {
+    "Country": "India",
+    "State": "Maharashtra",
+    "City": "Pune",
+    "DC": "SEZ",
+    "Region": "Cafeteria 1",
+    "Sub Region 1": "Floor 0",
+    "Sub Region 2": " KFC",
+    "Capacity": "35"
+  },
+  {
+    "Country": "India",
+    "State": "Maharashtra",
+    "City": "Pune",
+    "DC": "SEZ",
+    "Region": "Cafeteria 1",
+    "Sub Region 1": "Floor 1",
+    "Sub Region 2": " Chennai Express",
+    "Capacity": "35"
+  },
+  {
+    "Country": "India",
+    "State": "Maharashtra",
+    "City": "Pune",
+    "DC": "SEZ",
+    "Region": "Cafeteria 1",
+    "Sub Region 1": "Floor 1",
+    "Sub Region 2": " ChaiPoint",
+    "Capacity": "35"
+  },
+  {
+    "Country": "India",
+    "State": "Maharashtra",
+    "City": "Pune",
+    "DC": "SEZ",
+    "Region": "Cafeteria 1",
+    "Sub Region 1": "Floor 0",
+    "Sub Region 2": " Delhi Swad",
+    "Capacity": "35"
+  },
+  {
+    "Country": "India",
+    "State": "Maharashtra",
+    "City": "Pune",
+    "DC": "SEZ",
+    "Region": "Cafeteria 1",
+    "Sub Region 1": "Floor 0",
+    "Sub Region 2": " Common Area in Front of Dominos",
+    "Capacity": "35"
+  },
+  {
+    "Country": "India",
+    "State": "Maharashtra",
+    "City": "Pune",
+    "DC": "SEZ",
+    "Region": "Cafeteria 1",
+    "Sub Region 1": "Floor 0",
+    "Sub Region 2": " Common Area in Front of KFC",
+    "Capacity": "35"
+  },
+  {
+    "Country": "India",
+    "State": "Maharashtra",
+    "City": "Pune",
+    "DC": "SEZ",
+    "Region": "Cafeteria 1",
+    "Sub Region 1": "Floor 1",
+    "Sub Region 2": " Common Area in Front of Chennai Express",
+    "Capacity": "35"
+  },
+  {
+    "Country": "India",
+    "State": "Maharashtra",
+    "City": "Pune",
+    "DC": "SEZ",
+    "Region": "Cafeteria 1",
+    "Sub Region 1": "Floor 1",
+    "Sub Region 2": " Common Area in Front of ChaiPoint",
+    "Capacity": "35"
+  },
+  {
+    "Country": "India",
+    "State": "Maharashtra",
+    "City": "Pune",
+    "DC": "SEZ",
+    "Region": "Cafeteria 1",
+    "Sub Region 1": "Floor 0",
+    "Sub Region 2": " Common Area in Front of Delhi Swad",
+    "Capacity": "35"
+  },
+  {
+    "Country": "India",
+    "State": "Maharashtra",
+    "City": "Pune",
+    "DC": "SEZ",
+    "Region": "Cafeteria 1",
+    "Sub Region 1": "Floor 1",
+    "Sub Region 2": " Common Area Right Wing",
+    "Capacity": "35"
+  },
+  {
+    "Country": "India",
+    "State": "Maharashtra",
+    "City": "Pune",
+    "DC": "SEZ",
+    "Region": "Cafeteria 1",
+    "Sub Region 1": "Floor 1",
+    "Sub Region 2": " Common Area Left Wing",
+    "Capacity": "35"
+  },
+  {
+    "Country": "India",
+    "State": "Maharashtra",
+    "City": "Pune",
+    "DC": "SEZ",
+    "Region": "Cafeteria 1",
+    "Sub Region 1": "Floor 1",
+    "Sub Region 2": " Common Area Center Wing",
+    "Capacity": "35"
+  }
+]

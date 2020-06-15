@@ -1,0 +1,65 @@
+https://azure-samples.github.io/raspberry-pi-web-simulator/
+PuneP2FC1L0Dominos
+	Connection: <>
+	SensorId: 'PuneP2FC1L0Dominos',
+	Count: Math.round(Math.random()* Math.floor(36))
+	
+PuneP2FC1L0KFC
+	Connection: <>
+	DeviceId: 'PuneP2FC1L0KFC',
+	Total: Math.round(Math.random()* Math.floor(36))
+
+PuneP2FC1L1ChennaiExpress:
+	Connection: <>
+	SensorId: 'PuneP2FC1L1ChennaiExpress',
+	Count: Math.round(Math.random()* Math.floor(36))
+
+PuneP2FC1L1ChaiPoint
+	Connection: <>
+	SensorId: 'PuneP2FC1L1ChaiPoint',
+	Count: Math.round(Math.random()* Math.floor(36))
+
+PuneP2FC1L0DelhiSwad
+	Connection: <>
+	DeviceId: 'PuneP2FC1L0DelhiSwad',
+	Total: Math.round(Math.random()* Math.floor(36))
+	
+PuneP2FC1L0CommonAreaInFrontOfDominos
+	Connection: <>
+	SensorId: 'PuneP2FC1L0CommonAreaInFrontOfDominos',
+	Count: Math.round(Math.random()* Math.floor(36))
+
+PuneP2FC1L0CommonAreaInFrontOfKFC
+	Connection: <>
+	DeviceId: 'PuneP2FC1L0CommonAreaInFrontOfKFC',
+	Total: Math.round(Math.random()* Math.floor(36))
+	
+PuneP2FC1L1CommonAreaInFrontOfChennaiExpress
+	Connection: <>
+	SensorId: 'PuneP2FC1L1CommonAreaInFrontOfChennaiExpress',
+	Count: Math.round(Math.random()* Math.floor(36))
+	
+PuneP2FC1L1CommonAreaInFrontOfChaiPoint
+	Connection: <>
+	SensorId: 'PuneP2FC1L1CommonAreaInFrontOfChaiPoint',
+	Count: Math.round(Math.random()* Math.floor(36))
+	
+PuneP2FC1L0CommonAreaInFrontOfDelhiSwad
+	Connection: <>
+	DeviceId: 'PuneP2FC1L0CommonAreaInFrontOfDelhiSwad',
+	Total: Math.round(Math.random()* Math.floor(36))	
+	
+PuneP2FC1L1CommonAreaRightWing
+	Connection: <>
+	SensorId: 'PuneP2FC1L1CommonAreaRightWing',
+	Count: Math.round(Math.random()* Math.floor(36))
+	
+PuneP2FC1L1CommonAreaLeftWing
+	Connection: <>
+	SensorId: 'PuneP2FC1L1CommonAreaLeftWing',
+	Count: Math.round(Math.random()* Math.floor(36))
+	
+PuneP2FC1L1CommonAreaCenterWing
+	Connection: <>
+	SensorId: 'PuneP2FC1L1CommonAreaCenterWing',
+	Count: Math.round(Math.random()* Math.floor(36))
