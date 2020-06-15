@@ -1,0 +1,30 @@
+﻿{
+  "CompresssionType": null,
+  "Sample": null,
+  "EventHubProperties": null,
+  "BlobStorageProperties": null,
+  "IoTHubProperties": null,
+  "BlobReferenceProperties": {
+    "Container": "infosysindiamaharashtrapunelookup",
+    "DateFormat": "yyyy/MM/dd",
+    "PathPattern": "devices.json",
+    "StorageAccounts": [
+      {
+        "AccountKey": null,
+        "AccountName": "areaoccupancystorage"
+      }
+    ],
+    "TimeFormat": "HH"
+  },
+  "DataSourceCredentialDomain": "716d7b02-c9f2-4354-b1d5-de3d4c029c47.StreamAnalyticsCredential",
+  "Name": "InfosysAreaOccupancyLookup",
+  "Type": "Reference data",
+  "DataSourceType": "Blob Storage",
+  "Serialization": {
+    "Encoding": "UTF8",
+    "Type": "Json",
+    "FieldDelimiter": null,
+    "Format": null
+  },
+  "ScriptType": "Input"
+}

@@ -1,0 +1,30 @@
+﻿{
+  "CompresssionType": null,
+  "Sample": null,
+  "EventHubProperties": null,
+  "BlobStorageProperties": null,
+  "IoTHubProperties": null,
+  "BlobReferenceProperties": {
+    "Container": "sensorconfiguration",
+    "DateFormat": "yyyy/MM/dd",
+    "PathPattern": "SensorConfiguration.json",
+    "StorageAccounts": [
+      {
+        "AccountKey": null,
+        "AccountName": "areaoccupancystorage"
+      }
+    ],
+    "TimeFormat": "HH"
+  },
+  "DataSourceCredentialDomain": "2aeea2e4-572c-41cf-8ee4-c44fab9f7b8f.StreamAnalyticsCredential",
+  "Name": "SensorConfig",
+  "Type": "Reference data",
+  "DataSourceType": "Blob Storage",
+  "Serialization": {
+    "Encoding": "UTF8",
+    "Type": "Json",
+    "FieldDelimiter": null,
+    "Format": null
+  },
+  "ScriptType": "Input"
+}

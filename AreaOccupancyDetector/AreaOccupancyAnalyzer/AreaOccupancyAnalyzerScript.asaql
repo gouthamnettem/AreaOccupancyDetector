@@ -1,27 +1,138 @@
-﻿/*StorageAccount:areaoccupancystorage,Container: infosysindiamaharashtrapune*/
+﻿WITH SensorData AS (
 SELECT
-    *
-INTO
-    [AreaOccupancyAnalyzedStreamMock]
+[AreaOccupancyStreamMock].[Employee Count],
+[AreaOccupancyStreamMock].[TimeStamp],
+[AreaOccupancyStreamMock].[Sub Region 2],
+[SensorConfig].[Country],
+[SensorConfig].[State],
+[SensorConfig].[City],
+[SensorConfig].[DC],
+[SensorConfig].[Region],
+[SensorConfig].[Sub Region 1]
 FROM
-    [AreaOccupancyStreamMock]
+[AreaOccupancyStreamMock]
+INNER JOIN
+[SensorConfig]
+ON [AreaOccupancyStreamMock].[Sub Region 2] = [SensorConfig].[Sub Region 2]
+WHERE [AreaOccupancyStreamMock].[Sub Region 2] IS NOT NULL
+
+UNION
 
 SELECT
-    *
-INTO
-    [InfosysAreaOccupancyAnalyzedStreamIoTHub]
+[AreaOccupancyStreamMock].[Employee Count],
+[AreaOccupancyStreamMock].[TimeStamp],
+[AreaOccupancyStreamMock].[Device] AS [Sub Region 2],
+[SensorConfig].[Country],
+[SensorConfig].[State],
+[SensorConfig].[City],
+[SensorConfig].[DC],
+[SensorConfig].[Region],
+[SensorConfig].[Sub Region 1]
 FROM
-    [InfosysAreaOccupancyStreamIoTHub]
-/*
+[AreaOccupancyStreamMock]
+INNER JOIN
+[SensorConfig]
+ON [AreaOccupancyStreamMock].[Device] = [SensorConfig].[Sub Region 2]
+WHERE [AreaOccupancyStreamMock].[Device] IS NOT NULL
+),
+IoTData AS (
 SELECT
-    System.Timestamp AS WindowEnd,
-    SUM([Employee Count]) AS [Total Employee Count],
-    [Region],
-    [Sub Region 1],
-    [Sub Region 2]
+	[InfosysAreaOccupancyStreamIoTHub].[SensorId] AS [SensorId], 
+	[InfosysAreaOccupancyStreamIoTHub].[Count] AS [Employee Count],
+	[InfosysAreaOccupancyLookup].[Capacity],
+	[InfosysAreaOccupancyLookup].[Country],
+	[InfosysAreaOccupancyLookup].[State],
+	[InfosysAreaOccupancyLookup].[City],
+	[InfosysAreaOccupancyLookup].[DC],
+	[InfosysAreaOccupancyLookup].[Region],
+	[InfosysAreaOccupancyLookup].[Sub Region 1],
+	[InfosysAreaOccupancyLookup].[Sub Region 2],
+	[InfosysAreaOccupancyStreamIoTHub].[EventEnqueuedUtcTime]
+FROM 
+	[InfosysAreaOccupancyStreamIoTHub]
+JOIN
+	[InfosysAreaOccupancyLookup]
+ON [InfosysAreaOccupancyStreamIoTHub].[SensorId] = [InfosysAreaOccupancyLookup].[SensorId]
+WHERE [InfosysAreaOccupancyLookup].[Schema] = 'SensorId,Count'
+
+UNION
+
+SELECT
+	[InfosysAreaOccupancyStreamIoTHub].[DeviceId] AS [SensorId],
+	[InfosysAreaOccupancyStreamIoTHub].[Total] AS [Employee Count],
+	[InfosysAreaOccupancyLookup].[Capacity],
+	[InfosysAreaOccupancyLookup].[Country],
+	[InfosysAreaOccupancyLookup].[State],
+	[InfosysAreaOccupancyLookup].[City],
+	[InfosysAreaOccupancyLookup].[DC],
+	[InfosysAreaOccupancyLookup].[Region],
+	[InfosysAreaOccupancyLookup].[Sub Region 1],
+	[InfosysAreaOccupancyLookup].[Sub Region 2],
+	[InfosysAreaOccupancyStreamIoTHub].[EventEnqueuedUtcTime]
+FROM 
+	[InfosysAreaOccupancyStreamIoTHub]
+JOIN
+	[InfosysAreaOccupancyLookup]
+ON [InfosysAreaOccupancyStreamIoTHub].[DeviceId] = [InfosysAreaOccupancyLookup].[SensorId]
+WHERE [InfosysAreaOccupancyLookup].[Schema] = 'DeviceId,Total'
+)
+
+Select
+*
 INTO
-    [powerbisda1]
-FROM
-    [abc]
-GROUP BY TumblingWindow(Duration(second, 1)), [Region], [Sub Region 1], [Sub Region 2]
-*/
+[AreaOccupancyAnalyzedStreamMock]
+From
+[SensorData]
+
+SELECT
+	[IoTData].[SensorId],
+	[IoTData].[Employee Count],
+	CASE 
+		WHEN [IoTData].[Employee Count] >= [IoTData].[Capacity] 
+		THEN 'Not Safe to go'
+		ELSE 'Safe' 
+        END AS [Friendly Suggestion],
+	[IoTData].[Capacity],
+	[IoTData].[Country],
+	[IoTData].[State],
+	[IoTData].[City],
+	[IoTData].[DC],
+	[IoTData].[Region],
+	[IoTData].[Sub Region 1],
+	[IoTData].[Sub Region 2],
+	[IoTData].[EventEnqueuedUtcTime]
+INTO
+	[InfosysAreaOccupancyAnalyzedStreamIoTHub]
+From
+	[IoTData]
+
+Select
+*
+INTO
+[AreaOccupancyAnalyzedStreamMockHistory]
+From
+[SensorData]
+
+SELECT
+	[IoTData].[SensorId],
+	[IoTData].[Employee Count],
+	CASE 
+		WHEN [IoTData].[Employee Count] >= [IoTData].[Capacity] 
+		THEN 'Not Safe to go'
+		ELSE 'Safe' 
+        END AS [Friendly Suggestion],
+	[IoTData].[Capacity],
+	[IoTData].[Country],
+	[IoTData].[State],
+	[IoTData].[City],
+	[IoTData].[DC],
+	[IoTData].[Region],
+	[IoTData].[Sub Region 1],
+	[IoTData].[Sub Region 2],
+	[IoTData].[EventEnqueuedUtcTime]
+INTO
+	[InfosysAreaOccupancyAnalyzedStreamIoTHubHistory]
+From
+	[IoTData]
+
+

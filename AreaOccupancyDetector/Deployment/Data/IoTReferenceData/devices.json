@@ -1,0 +1,223 @@
+[
+  {
+    "SensorId": "PuneP2FC1L0Dominos",
+    "Capacity": 35,
+    "Country": "India",
+    "State": "Maharashtra",
+    "City": "Pune",
+    "DC": "SEZ",
+    "Region": "Food Court 1",
+    "Sub Region 1": "Level 0",
+    "Sub Region 2": "Dominos",
+    "Schema": "SensorId,Count",
+    "Relation": {
+      "Parent": null,
+      "Level": 0,
+      "Operation": null
+    }
+  },
+  {
+    "SensorId": "PuneP2FC1L0KFC",
+    "Capacity": 35,
+    "Country": "India",
+    "State": "Maharashtra",
+    "City": "Pune",
+    "DC": "SEZ",
+    "Region": "Food Court 1",
+    "Sub Region 1": "Level 0",
+    "Sub Region 2": "KFC",
+    "Schema": "DeviceId,Total",
+    "Relation": {
+      "Parent": null,
+      "Level": 0,
+      "Operation": null
+    }
+  },
+  {
+    "SensorId": "PuneP2FC1L1ChennaiExpress",
+    "Capacity": 35,
+    "Country": "India",
+    "State": "Maharashtra",
+    "City": "Pune",
+    "DC": "SEZ",
+    "Region": "Food Court 1",
+    "Sub Region 1": "Level 1",
+    "Sub Region 2": "Chennai Express",
+    "Schema": "SensorId,Count",
+    "Relation": {
+      "Parent": null,
+      "Level": 0,
+      "Operation": null
+    }
+  },
+  {
+    "SensorId": "PuneP2FC1L1ChaiPoint",
+    "Capacity": 35,
+    "Country": "India",
+    "State": "Maharashtra",
+    "City": "Pune",
+    "DC": "SEZ",
+    "Region": "Food Court 1",
+    "Sub Region 1": "Level 1",
+    "Sub Region 2": "ChaiPoint",
+    "Schema": "SensorId,Count",
+    "Relation": {
+      "Parent": null,
+      "Level": 0,
+      "Operation": null
+    }
+  },
+  {
+    "SensorId": "PuneP2FC1L0DelhiSwad",
+    "Capacity": 35,
+    "Country": "India",
+    "State": "Maharashtra",
+    "City": "Pune",
+    "DC": "SEZ",
+    "Region": "Food Court 1",
+    "Sub Region 1": "Level 0",
+    "Sub Region 2": "Delhi Swad",
+    "Schema": "DeviceId,Total",
+    "Relation": {
+      "Parent": null,
+      "Level": 0,
+      "Operation": null
+    }
+  },
+  {
+    "SensorId": "PuneP2FC1L0CommonAreaInFrontOfDominos",
+    "Capacity": 35,
+    "Country": "India",
+    "State": "Maharashtra",
+    "City": "Pune",
+    "DC": "SEZ",
+    "Region": "Food Court 1",
+    "Sub Region 1": "Level 0",
+    "Sub Region 2": "Common Area in Front of Dominos",
+    "Schema": "SensorId,Count",
+    "Relation": {
+      "Parent": null,
+      "Level": 0,
+      "Operation": null
+    }
+  },
+  {
+    "SensorId": "PuneP2FC1L0CommonAreaInFrontOfKFC",
+    "Capacity": 35,
+    "Country": "India",
+    "State": "Maharashtra",
+    "City": "Pune",
+    "DC": "SEZ",
+    "Region": "Food Court 1",
+    "Sub Region 1": "Level 0",
+    "Sub Region 2": "Common Area in Front of KFC",
+    "Schema": "DeviceId,Total",
+    "Relation": {
+      "Parent": null,
+      "Level": 0,
+      "Operation": null
+    }
+  },
+  {
+    "SensorId": "PuneP2FC1L1CommonAreaInFrontOfChennaiExpress",
+    "Capacity": 35,
+    "Country": "India",
+    "State": "Maharashtra",
+    "City": "Pune",
+    "DC": "SEZ",
+    "Region": "Food Court 1",
+    "Sub Region 1": "Level 1",
+    "Sub Region 2": "Common Area in Front of Chennai Express",
+    "Schema": "SensorId,Count",
+    "Relation": {
+      "Parent": null,
+      "Level": 0,
+      "Operation": null
+    }
+  },
+  {
+    "SensorId": "PuneP2FC1L1CommonAreaInFrontOfChaiPoint",
+    "Capacity": 35,
+    "Country": "India",
+    "State": "Maharashtra",
+    "City": "Pune",
+    "DC": "SEZ",
+    "Region": "Food Court 1",
+    "Sub Region 1": "Level 1",
+    "Sub Region 2": "Common Area in Front of ChaiPoint",
+    "Schema": "SensorId,Count",
+    "Relation": {
+      "Parent": null,
+      "Level": 0,
+      "Operation": null
+    }
+  },
+  {
+    "SensorId": "PuneP2FC1L0CommonAreaInFrontOfDelhiSwad",
+    "Capacity": 35,
+    "Country": "India",
+    "State": "Maharashtra",
+    "City": "Pune",
+    "DC": "SEZ",
+    "Region": "Food Court 1",
+    "Sub Region 1": "Level 0",
+    "Sub Region 2": "Common Area in Front of Delhi Swad",
+    "Schema": "DeviceId,Total",
+    "Relation": {
+      "Parent": null,
+      "Level": 0,
+      "Operation": null
+    }
+  },
+  {
+    "SensorId": "PuneP2FC1L1CommonAreaRightWing",
+    "Capacity": 35,
+    "Country": "India",
+    "State": "Maharashtra",
+    "City": "Pune",
+    "DC": "SEZ",
+    "Region": "Food Court 1",
+    "Sub Region 1": "Level 1",
+    "Sub Region 2": "Common Area Right Wing",
+    "Schema": "SensorId,Count",
+    "Relation": {
+      "Parent": null,
+      "Level": 0,
+      "Operation": null
+    }
+  },
+  {
+    "SensorId": "PuneP2FC1L1CommonAreaLeftWing",
+    "Capacity": 35,
+    "Country": "India",
+    "State": "Maharashtra",
+    "City": "Pune",
+    "DC": "SEZ",
+    "Region": "Food Court 1",
+    "Sub Region 1": "Level 1",
+    "Sub Region 2": "Common Area Left Wing",
+    "Schema": "SensorId,Count",
+    "Relation": {
+      "Parent": null,
+      "Level": 0,
+      "Operation": null
+    }
+  },
+  {
+    "SensorId": "PuneP2FC1L1CommonAreaCenterWing",
+    "Capacity": 35,
+    "Country": "India",
+    "State": "Maharashtra",
+    "City": "Pune",
+    "DC": "SEZ",
+    "Region": "Food Court 1",
+    "Sub Region 1": "Level 1",
+    "Sub Region 2": "Common Area Center Wing",
+    "Schema": "SensorId,Count",
+    "Relation": {
+      "Parent": null,
+      "Level": 0,
+      "Operation": null
+    }
+  }
+]

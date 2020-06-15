@@ -1,0 +1,33 @@
+﻿{
+  "EventHubProperties": null,
+  "BlobStorageProperties": {
+    "Container": "infosysindiamaharashtrapuneextsourcehistory",
+    "DateFormat": "yyyy/MM/dd",
+    "PathPattern": "{date}{time}/",
+    "StorageAccounts": [
+      {
+        "AccountKey": null,
+        "AccountName": "areaoccupancystorage"
+      }
+    ],
+    "TimeFormat": "HH"
+  },
+  "SQLDatabaseProperties": null,
+  "TableStorageProperties": null,
+  "ServiceBusQueueProperties": null,
+  "ServiceBusTopicProperties": null,
+  "DocumentDbProperties": null,
+  "PowellBIProperties": null,
+  "AzureDataLakeStoreProperties": null,
+  "AzureFunctionProperties": null,
+  "DataSourceCredentialDomain": "b9782827-3387-4848-b746-51256ba0cb59.StreamAnalyticsCredential",
+  "Name": "AreaOccupancyAnalyzedStreamMockHistory",
+  "DataSourceType": "Blob Storage",
+  "Serialization": {
+    "Encoding": "UTF8",
+    "Type": "Json",
+    "FieldDelimiter": null,
+    "Format": "LineSeparated"
+  },
+  "ScriptType": "Output"
+}

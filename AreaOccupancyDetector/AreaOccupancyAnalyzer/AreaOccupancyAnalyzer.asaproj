@@ -26,7 +26,13 @@
     <Configure Include="Inputs\AreaOccupancyStreamMock.json">
       <SubType>Input</SubType>
     </Configure>
+    <Configure Include="Inputs\InfosysAreaOccupancyLookup.json">
+      <SubType>Input</SubType>
+    </Configure>
     <Configure Include="Inputs\InfosysAreaOccupancyStreamIoTHub.json">
+      <SubType>Input</SubType>
+    </Configure>
+    <Configure Include="Inputs\SensorConfig.json">
       <SubType>Input</SubType>
     </Configure>
     <Configure Include="Outputs\AreaOccupancyAnalyzedStreamMock.json">
@@ -35,7 +41,13 @@
     <Configure Include="JobConfig.json">
       <SubType>JobConfig</SubType>
     </Configure>
+    <Configure Include="Outputs\AreaOccupancyAnalyzedStreamMockHistory.json">
+      <SubType>Output</SubType>
+    </Configure>
     <Configure Include="Outputs\InfosysAreaOccupancyAnalyzedStreamIoTHub.json">
+      <SubType>Output</SubType>
+    </Configure>
+    <Configure Include="Outputs\InfosysAreaOccupancyAnalyzedStreamIoTHubHistory.json">
       <SubType>Output</SubType>
     </Configure>
   </ItemGroup>
